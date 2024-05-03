@@ -1,0 +1,25 @@
+$color_bacground: rgba(0, 0, 0, 0.200);
+$color_div: beige;
+$color_test: rgba(255, 166, 0, 0.76);
+@font-face {
+    font-family: "allura";
+    src: url(../font/Allura/Allura-Regular.ttf);
+  }
+  @mixin centerChild {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "allura", sans-serif;
+    list-style: none;
+}
+
+body{
+    min-height: 100vh;
+}
