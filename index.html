@@ -146,37 +146,41 @@
         </div>
       </div>
       <div class="bloc3">
-        <div class="bloc3_left">
-          <h4>time</h4>
-          <h5>open</h5>
-          <img src="./img/ic-plate.png" alt="" />
-          <h3>Monday - friday</h3>
-          <p>
-            7am - 11am (breakfast) <br />
-            11am - 10pm (lunch/dinner)
-          </p>
-          <h3>saturday / sunday</h3>
-          <p>
-            8am - 1pm (brunch) <br />
-            1pm - 9pm (lunch/dinner)
-          </p>
-          <h3>+15 890 979 25 52</h3>
-        </div>
-        <div class="bloc3_right">
-          <h3>reservation</h3>
-          <h4>online booking</h4>
-          <img src="./img/ic-plate.png" alt="" />
-          <form post="get" action="traitement.php">
-            <select name="" id="">
-              <option value="">poeple</option>
-            </select>
-            <input type="date" name="" id="date" />
-            <input type="time" name="" id="time" />
-            <input type="text" name="" id="name" value="Name" />
-            <input type="text" name="" id="phone" value="phone" />
-            <input type="text" name="" id="email" value="Email" />
-            <input type="submit" value="book now" />
-          </form>
+        <div class="bloc3_container">
+          <div class="bloc3_left">
+            <div>
+              <h4>Time</h4>
+              <h5>open</h5>
+              <img src="./img/ic-plate.png" alt="" />
+              <h3>Monday - friday</h3>
+              <p>
+                7am - 11am (breakfast) <br />
+                11am - 10pm (lunch/dinner)
+              </p>
+              <h3>saturday / sunday</h3>
+              <p>
+                8am - 1pm (brunch) <br />
+                1pm - 9pm (lunch/dinner)
+              </p>
+              <h3>+15 890 979 25 52</h3>
+            </div>
+          </div>
+          <div class="bloc3_right">
+            <h3>Reservation</h3>
+            <h4>online booking</h4>
+            <img src="./img/ic-plate.png" alt="" />
+            <form post="get" action="traitement.php">
+              <select name="" id="">
+                <option value="People">People</option>
+              </select>
+              <input type="date" name="" id="date" />
+              <input type="time" name="" id="time" />
+              <input type="text" name="" id="name" placeholder="Name" />
+              <input type="text" name="" id="phone" placeholder="Phone" />
+              <input type="text" name="" id="email" placeholder="Email" />
+              <span></span><input type="submit" value="book now" /><span></span>
+            </form>
+          </div>
         </div>
       </div>
       <div class="bloc4">

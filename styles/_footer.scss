@@ -3,9 +3,17 @@ footer{
     grid-template-columns: 50% 50%;
     min-height: 10vh;
 
+    @media screen and (max-width: $media_size1) {
+        grid-template-columns: 100%;
+    }
+
     .footer_left{
         background: $color_footer1;
         padding: 2.5rem 3rem 2rem 30%;
+
+        @media screen and (max-width: $media_size1) {
+            display: none;
+        }
 
         h2{
             color: $color_test;
@@ -28,6 +36,11 @@ footer{
     .footer_right{
         background: $color_footer2;
         padding: 2.5rem 3rem 2rem 3rem;
+        
+        @media screen and (max-width: $media_size1) {
+            padding-top: 4rem ;
+            padding-bottom: 4rem;
+        }
 
         div{
             h3{
