@@ -8,17 +8,17 @@
     width: 100%;
     .bloc1_left{
         position: relative; 
-        border: 3px dotted black; 
+        border: 3px dotted $color_test; 
         margin: 20px;
         width: 50%;
         img{
             display: block;
             margin: auto;
-            width: auto; /* Définir la largeur souhaitée pour l'image */
+            width: auto; 
             height: auto;
             margin-top: 40Px; 
             // padding-top: 40px;
-            border-radius: 100%; /* Arrondir les coins pour créer un cercle */
+            border-radius: 100%; 
             // overflow: hidden
         } 
     }
@@ -70,9 +70,8 @@
         font-weight: bold;  
         color: #83817dc4;
     }
-    .bloc2_right{
+    .bloc1_right{
         width: 50%;
-        border: 1px solid black;
         img{
             width: 100%;
             height: 100%;
@@ -83,7 +82,7 @@
         .bloc1_left{
             width: 100%;
         }
-        .bloc2_right{
+        .bloc1_right{
             display: none;
         }
     }
