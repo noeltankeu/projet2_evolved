@@ -2,7 +2,12 @@
     background: url(/img/bg-slider-06.jpg) no-repeat;
     background-size: 100% 85vh;
     color : whitesmoke;
-    min-height: 85vh;
+    min-height: 90vh;
+   
+    @media screen and (max-width: $media_size1) {
+        background-size: 100%;
+        background: url(/img/bg-slider-06.jpg) center no-repeat;
+    }
 
     nav{
         @include centerChild;
@@ -11,8 +16,12 @@
         ul{
             display: flex;
             justify-content: space-around;
-    
             width: 60%;
+            
+            @media screen and (max-width: $media_size1) {
+                display: none;
+            }
+                          
     
             li{
                 padding: 5px;
@@ -34,6 +43,9 @@
             @include centerChild;
             width: 20%;
             text-align: left;
+
+           
+
             
             i{
                 width: 1.8rem;
@@ -43,6 +55,11 @@
         h2{
             width: 25% ;
             font-size: 2.5rem;
+            @media screen and (max-width: $media_size1) {
+                font-size: 1.7rem;
+                width: 50%;
+                text-align: left;
+            }
         }
     }
 
@@ -50,8 +67,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 8rem;
 
-        margin-top: 7.5rem;
+        @media screen and (max-width: $media_size1) {
+            margin-top: 8rem;
+        }
 
         h2{
             color : $color_test;
@@ -64,16 +84,30 @@
             text-transform: uppercase;
             font-size: 2rem;
             letter-spacing: 7px;
+            @media screen and (max-width: $media_size1) {
+                font-size: 1.7rem;
+                margin: 2rem 0;
+            }
         }
 
         img{
             margin: 2rem auto;
+            @media screen and (max-width: $media_size1) {
+                height: 35px;
+                margin: 2.5rem auto;
+            }
         }
 
         p{
             text-transform: uppercase;
             font-family: $other_font;
             letter-spacing: 8px;
+            text-align: center;
+
+            @media screen and (max-width: $media_size1) {
+                font-size: 0.7rem;
+                letter-spacing: 5px;
+            }
 
         }
 

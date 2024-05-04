@@ -1,0 +1,137 @@
+.bloc3{
+    padding: 4rem;
+    background: rgb(38, 37, 35);
+    @media screen and (max-width: $media_size1) {
+        padding: 2rem;
+     }
+    
+
+    .bloc3_container{
+        width: 80%;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        margin: 0 auto;
+
+        @media screen and (max-width: $media_size1) {
+           width: 100%;
+           display: flex;
+           flex-direction: column;
+        }
+        
+
+
+
+        .bloc3_left{
+            background: black;
+            padding: 1rem;
+
+            div{
+                border: 1px solid $color_test;
+                text-align: center;
+                padding: 30px;
+                @media screen and (max-width: $media_size1) {
+                    border: 1px dotted white;
+                 }
+                
+                h4{
+                    color: $color_test;
+                    font-size: 2rem;
+                    font-weight: 100;
+                }
+
+                h5{
+                    color: white;
+                    font-family: $other_font;
+                    font-size: 1.2rem;
+                    text-transform: uppercase;
+                }
+
+                img{
+                    margin: 2rem auto;
+                    height: 25px;
+                }
+
+                h3{
+                    color: $color_test;
+                    font-family: $other_font;
+                    font-size: 1.2rem;
+                    text-transform: uppercase;
+                    font-weight: 100;
+                }
+                
+                p{
+                    color : $color_div;
+                    font-family: $other_font;
+                    margin: 1.5rem auto;
+                }
+
+            }
+        }
+
+        .bloc3_right{
+            background: rgb(237, 237, 237);
+            
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content: center;
+
+            @media screen and (max-width: $media_size1) {
+               padding: 2rem;
+             }
+
+            h3{
+                color: $color_test;
+                font-size: 2rem;
+                font-weight: 100;
+            }
+
+            h4{
+                color: black;
+                font-size: 1.8rem;
+                font-weight: bold;
+                font-family: $other_font;
+                text-transform: uppercase;
+            }
+
+            img{
+                margin: 2rem auto;
+                height: 25px;
+            }
+
+            form{
+                width: 80%;
+                display: grid;
+                grid-template-columns: 30% 30% 35%;
+                column-gap: 0.5rem;
+                row-gap: 2rem;
+
+                @media screen and (max-width: $media_size1) {
+                    display: flex;
+                    flex-direction: column;
+                 }
+
+                input, select{
+                    border: none;
+                    background: none;
+                    font-family: $other_font;
+                    border-bottom: 1px solid gray;
+                    padding: 10px 0;
+                }
+
+                input[type="submit"]{
+                    background: rgb(38, 37, 35);
+                    border-radius: 30px;
+                    color: white;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 1.1rem;
+                    width: 80%;
+                    padding: 10px;
+                    
+                }
+            }
+
+        }
+    }
+}
