@@ -2,6 +2,7 @@
     background-color: $color_footer2;
     color: white;
     height: 22rem;
+    width: 100%;
    text-align: center;
    text-transform: capitalize;
    font-size: 1.2rem;
@@ -31,6 +32,7 @@
 .main_bloc2{
     background: url(../img/bg-menu-01.jpg) center/cover;
     height: 500px;
+    width: 100%;
     position: relative;
     .main_bloc2_container{
         background-color: white;
@@ -102,6 +104,51 @@
             font-family: $other_font;
             color: $color_test;
             font-size: 1rem;
+        }
+    }
+}
+@media screen and (max-width: 700px){
+    .main_bloc2{
+        position: relative;
+    }
+    .main_bloc2_container{
+        position: absolute;
+        background-color: black;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-areas: 
+        "i1" 
+        "i2"
+        "i3"
+        "i4"
+        "i5"
+        "i6"
+        "i7"
+        "i8";
+        .s12{
+            grid-area: i1;
+        }
+        .s22{
+            grid-area: i2;
+        }
+        .s15{
+            grid-area: i3;
+        }
+        .s18{
+            grid-area: i4;
+        }
+        .s20{
+            grid-area: i5;
+        }
+        .s14{
+            grid-area: i6;
+        }
+        .s16{
+            grid-area: i7;
+        }
+        .s25{
+            grid-area: i8;
         }
     }
 }

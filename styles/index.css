@@ -114,6 +114,7 @@ body {
   background-color: rgb(38, 37, 35);
   color: white;
   height: 22rem;
+  width: 100%;
   text-align: center;
   text-transform: capitalize;
   font-size: 1.2rem;
@@ -149,6 +150,7 @@ body {
 .main_bloc2 {
   background: url(../img/bg-menu-01.jpg) center/cover;
   height: 500px;
+  width: 100%;
   position: relative;
 }
 .main_bloc2 .main_bloc2_container {
@@ -227,6 +229,90 @@ body {
   font-family: sans-serif;
   color: rgba(255, 166, 0, 0.76);
   font-size: 1rem;
+}
+
+@media screen and (max-width: 700px) {
+  .main_bloc2 {
+    position: relative;
+  }
+  .main_bloc2_container {
+    position: absolute;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "i1" "i2" "i3" "i4" "i5" "i6" "i7" "i8";
+  }
+  .main_bloc2_container .s12 {
+    grid-area: i1;
+  }
+  .main_bloc2_container .s22 {
+    grid-area: i2;
+  }
+  .main_bloc2_container .s15 {
+    grid-area: i3;
+  }
+  .main_bloc2_container .s18 {
+    grid-area: i4;
+  }
+  .main_bloc2_container .s20 {
+    grid-area: i5;
+  }
+  .main_bloc2_container .s14 {
+    grid-area: i6;
+  }
+  .main_bloc2_container .s16 {
+    grid-area: i7;
+  }
+  .main_bloc2_container .s25 {
+    grid-area: i8;
+  }
+}
+.bloc4_bottom {
+  background: url(../img/gmap.jpg);
+  height: 300px;
+  position: relative;
+}
+.bloc4_bottom .bloc4_bottom_cont {
+  background-color: rgba(243, 243, 243, 0.563);
+  width: 80%;
+  padding: 50px;
+  height: 250px;
+  position: absolute;
+  bottom: 200px;
+}
+.bloc4_bottom .image {
+  position: relative;
+}
+.bloc4_bottom img {
+  position: absolute;
+  border-radius: 150px;
+  height: 3rem;
+  width: 3rem;
+  top: -85px;
+  left: 29rem;
+}
+.bloc4_bottom p {
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 2rem;
+  width: 80%;
+  margin: auto;
+  font-size: 0.8rem;
+}
+.bloc4_bottom h2 {
+  font-family: sans-serif;
+  padding-top: 25px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+.bloc4_bottom h3 {
+  font-family: sans-serif;
+  color: rgba(255, 166, 0, 0.76);
+  padding-top: 15px;
+  text-align: center;
+  font-size: 0.8rem;
 }
 
 footer {
