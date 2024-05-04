@@ -1,0 +1,68 @@
+footer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    min-height: 10vh;
+
+    .footer_left{
+        background: $color_footer1;
+        padding: 2.5rem 3rem 2rem 30%;
+
+        h2{
+            color: $color_test;
+            font-weight: 200;
+            padding: 10px 0 ;
+            font-size: 2rem;
+        }
+
+        p{
+            color: $color_div;
+            font-family: $other_font;
+            font-size: 0.8rem;
+            line-height: 1.4rem;
+            
+            
+        }
+
+    }
+
+    .footer_right{
+        background: $color_footer2;
+        padding: 2.5rem 3rem 2rem 3rem;
+
+        div{
+            h3{
+                font-family: $other_font ;
+                text-transform: uppercase;
+                color: white;
+                font-weight: bold;
+                font-size: 0.9rem;
+            }
+
+            input{
+                background: none;
+                margin: 1rem 0;
+                padding-left: 10px;
+                color: $color_div;
+                font-family: $other_font ;
+                border: 1px solid rgba(252, 192, 62, 0.188);
+                height: 1.8rem;
+
+            }
+            
+        }
+
+        .footer-logos{
+            padding: 2rem 0;
+            display: flex;
+            justify-content: space-between;
+            width: 40%;
+
+            i{
+                color : $color_div;
+                opacity: 0.4;
+            }
+        }
+
+
+    }
+}
