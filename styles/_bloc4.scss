@@ -1,3 +1,4 @@
+
 .bloc4{
     // background-color: red;
     h3{
@@ -25,4 +26,51 @@
         height: auto;
         margin-top: 40Px; 
     } 
+=======
+.bloc4_bottom{
+    background: url(../img/gmap.jpg);
+    height: 300px;
+    position: relative;
+    .bloc4_bottom_cont{
+        background-color: $color_div;
+        width: 80% ;
+        padding: 50px;
+        height: 250px;
+        position: absolute;
+        bottom: 200px;
+    }
+    .image{
+        position: relative;
+    }
+    img{
+        position: absolute;
+        border-radius: 150px;
+        height: 3rem;
+        width: 3rem;
+        top: -85px;
+        left: 29rem;
+    }
+    p{
+        font-family: $other_font;
+        text-align: center;
+        line-height: 2rem;
+        width: 80%;
+        margin: auto;
+        font-size: 0.8rem;
+    }
+    h2{
+        font-family: $other_font;
+        padding-top: 25px;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 1.2rem;
+    }
+    h3{
+        font-family: $other_font;
+        color: $color_test;
+        padding-top: 15px;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
 }
