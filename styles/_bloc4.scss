@@ -1,3 +1,32 @@
+
+.bloc4{
+    // background-color: red;
+    h3{
+        text-align: center;
+        padding-top: 70px;
+        font-weight: 0.5rem;
+        color: $color_test; 
+        text-transform: capitalize;
+        font-size: 2rem;
+    }
+    h4{
+        text-align: center;
+        font-weight: 1rem;
+        font-family: none;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        word-spacing: 1.5px;
+        margin-top: -5px;
+        // color: $color_div;
+    }
+    img{
+        display: block;
+        margin: auto;
+        width: auto; 
+        height: auto;
+        margin-top: 40Px; 
+    } 
+=======
 .bloc4_bottom{
     background: url(../img/gmap.jpg);
     height: 300px;
@@ -43,4 +72,5 @@
         text-align: center;
         font-size: 0.8rem;
     }
+
 }
