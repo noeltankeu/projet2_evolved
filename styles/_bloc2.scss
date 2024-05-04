@@ -22,18 +22,38 @@
         align-items: center;
         width: 65%;
         margin: auto;
+        @media screen and (max-width: 700px){
+          width: 90%;
+        }
+
         li{
             border-bottom: 1px solid white;
             font-family: $other_font;
             opacity: 0.8;
+            @media screen and (max-width: 700px){
+                font-size: 0.8rem;
+                margin: 0 10px ;
+            }
         }
     }
+
+    @media screen and (max-width: 700px){
+        height: 80vh;
+    }
 }
+
 .main_bloc2{
     background: url(../img/bg-menu-01.jpg) center/cover;
-    height: 500px;
+    min-height: 80vh;
     width: 100%;
     position: relative;
+
+    @media screen and (max-width: 700px){
+   
+        margin: 0 auto;
+    }
+
+
     .main_bloc2_container{
         background-color: white;
         position: absolute;
@@ -105,15 +125,23 @@
             color: $color_test;
             font-size: 1rem;
         }
+
+        @media screen and (max-width: 700px){
+            width: 90%;
+            top: -420px;
+            left: 1rem;
+            
+            display: flex;
+            flex-direction: column;
+        }
     }
 }
-@media screen and (max-width: 700px){
-    .main_bloc2{
-        position: relative;
-    }
+
+
+/* @media screen and (max-width: 700px){
+    
     .main_bloc2_container{
-        position: absolute;
-        background-color: black;
+        width: 80%;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
@@ -151,4 +179,4 @@
             grid-area: i8;
         }
     }
-}
+} */
