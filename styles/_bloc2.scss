@@ -1,0 +1,107 @@
+.head_bloc2{
+    background-color: $color_footer2;
+    color: white;
+    height: 22rem;
+   text-align: center;
+   text-transform: capitalize;
+   font-size: 1.2rem;
+   h2{
+    color: $color_test;
+    padding-top: 5rem;
+    opacity: 0.5;
+    font-size: 2.5rem;
+   }
+   img{
+    padding-top: 1rem;
+   }
+     ul{
+        padding-top: 1rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 65%;
+        margin: auto;
+        li{
+            border-bottom: 1px solid white;
+            font-family: $other_font;
+            opacity: 0.8;
+        }
+    }
+}
+.main_bloc2{
+    background: url(../img/bg-menu-01.jpg) center/cover;
+    height: 500px;
+    position: relative;
+    .main_bloc2_container{
+        background-color: white;
+        position: absolute;
+        top: -100px;
+        left: 15rem;
+        width: 65%;
+        padding: 15px;
+        border-top: 3px solid $color_test;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "z1 z2"
+        "z3 z4"
+        "z5 z6"
+        "z7 z8";
+        .s12{
+            grid-area: z1;
+        }
+        .s22{
+            grid-area: z2;
+        }
+        .s15{
+            grid-area: z3;
+        }
+        .s18{
+            grid-area: z4;
+        }
+        .s20{
+            grid-area: z5;
+        }
+        .s14{
+            grid-area: z6;
+        }
+        .s16{
+            grid-area: z7;
+        }
+        .s25{
+            grid-area: z8;
+        }
+        .s12, .s22, .s15, .s20, .s16, .s18, .s14, .s25{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px;
+            border-bottom: 1px dashed rgba(0, 0, 0, 0.185);
+            
+        }
+        .s12_cont, .s22_cont, .s15_cont, .s20_cont, .s16_cont, .s18_cont,.s14_cont, .s25_cont{
+            display: flex;
+            align-items: center;
+        }
+        img{
+            margin: 15px;
+            border-radius: 150px;
+            height: 4rem;
+        }
+        h5{
+            font-family: $other_font;
+            text-transform: uppercase;
+            font-size: 0.7rem;
+        }
+        p{
+            font-family: $other_font;
+            text-transform: capitalize;
+            font-size: 0.7rem;
+        }
+        h6{
+            font-family: $other_font;
+            color: $color_test;
+            font-size: 1rem;
+        }
+    }
+}
