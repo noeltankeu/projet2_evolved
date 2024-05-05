@@ -1,12 +1,12 @@
 .nav-header_container{
-    background: url(/img/bg-slider-06.jpg) no-repeat;
+    background: url(../img/bg-slider-06.jpg) no-repeat;
     background-size: 100% 85vh;
     color : whitesmoke;
     min-height: 90vh;
    
     @media screen and (max-width: $media_size1) {
         background-size: 100%;
-        background: url(/img/bg-slider-06.jpg) center no-repeat;
+        background: url(../img/bg-slider-06.jpg) center no-repeat;
     }
 
     nav{
