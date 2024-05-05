@@ -78,7 +78,7 @@
             object-fit: cover;
         }
     }
-    @media screen and (max-width:700px) {
+    @media screen and (max-width: $media_size1) {
         .bloc1_left{
             width: 100%;
         }
